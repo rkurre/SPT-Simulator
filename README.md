@@ -17,7 +17,7 @@ This program generates a tif-stack of simulated data and a ground-truth table of
 - MATLAB Version: 9.9.0.1467703 (R2020b) 
 - Statistics and Machine Learning Toolbox, Version 12.0 (R2020b)
 
-# Containing files:
+# Containing files
 - SPT_Simulator.fig: graphical user interface.
 - SPT_Simulator.m: graphical user interface (Matlab source code).
 - simFrames.m: source code for simulating single-molecule imaging stacks.
@@ -27,7 +27,7 @@ This program generates a tif-stack of simulated data and a ground-truth table of
 - Install Matlab and required toolboxes (installation time < 1 h)
 - extract ZIP-file 'SPT_Simulator.zip'
 
-# Instructions to run:
+# Instructions to run
 1. Start Matlab 2020b
 2. In Matlab browser, navigate to software directory (\...\SPT_Simulator\)
 3. run 'SPT_Simulator.m' in Matlab
@@ -35,8 +35,8 @@ This program generates a tif-stack of simulated data and a ground-truth table of
 
 Expected run time with default parameters less than 1 minute, using a computer with AMD Ryzen 7 4700U or similar
 
-# Input parameters:
-## Imaging parameters:
+# Input parameters
+## Imaging parameters
 - Exposure time: time interval of image acquisition and simulation (typical 5-50 ms).
 - Imaging width: width of camera field of view in pixel (typical 64-512).
 - Imaging Heigth: height of camera field of view in pixel (typical 64-512).
@@ -52,7 +52,7 @@ Expected run time with default parameters less than 1 minute, using a computer w
 - Illumination profile: Gaussian illumination profile with defined sigma or flat-top illumination profile.
 - Axial penetration depth of evanescent field.
 
-## Emitter parameters:
+## Emitter parameters
 - Emitter intensity: Integrated signal of single emitter in units of photons (typical: 50-500 photons)
 - Background intensity: Mean pixel background intensity (typical: 0-5 photons under TIRF conditions)
 - Particle density: Global particle density of simulation. (typical: 0.1-0.5 for single-molecule localization)
@@ -65,7 +65,7 @@ Expected run time with default parameters less than 1 minute, using a computer w
 - Number of generated independent data sets based on same parameters.
 - FileName (preffix): Name of the tif-stack.
 
-# Output:
+# Output
 1. Single Tif-stack of simulated data
 2. Ground-truth csv table: header = "frame","x [nm]","y [nm]","z [nm]","sigma [nm]","intensity [photon]","background [photon]';
 3. Matlab M-file containing all parameters and main variables.
